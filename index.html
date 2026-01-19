@@ -356,19 +356,20 @@
         </div>
     </section>
 
-<!-- Image Gallery Modal -->
-    <div id="galleryModal" class="gallery-modal">
-        <span class="close-modal">&times;</span>
-        <div class="modal-content">
-            <h2 class="gallery-title">우리의 성과</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="도로균열.png" alt="도로균열표지판" loading="lazy">
-                    <p class="image">첨단 장비를 활용한 정밀 균열 진단</p>
-                </div>
+<button id="openGalleryBtn">우리의 성과 보기</button>
+
+<div id="galleryModal" class="gallery-modal" style="display:none;">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <div class="modal-content">
+        <h2 class="gallery-title">우리의 성과</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="image/도로균열.png" alt="도로균열표지판" loading="lazy">
+                <p class="image-caption">도로균열 표지판</p>
             </div>
         </div>
     </div>
+</div>
 
     <script src="quiz.js"></script>
     <script src="script.js"></script>
@@ -376,6 +377,7 @@
 
 
 </html>
+
 
 
 
