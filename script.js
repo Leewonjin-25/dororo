@@ -198,30 +198,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const achievementBtn = document.getElementById('achievementBtn');
     const galleryModal = document.getElementById('galleryModal');
     const closeModal = document.getElementById('closeModal');
-
-   // 성과 모달 제어 코드
-document.addEventListener('DOMContentLoaded', () => {
+  
+  document.addEventListener('DOMContentLoaded', () => {
     const achievementBtn = document.getElementById('achievementBtn');
     const galleryModal = document.getElementById('galleryModal');
     const closeModal = document.getElementById('closeModal');
 
     // '우리의 성과' 버튼 클릭 시 모달 열기
-    if (achievementBtn) {
-        achievementBtn.addEventListener('click', () => {
-            galleryModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
-        });
-    }
+    achievementBtn.addEventListener('click', () => {
+        galleryModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+    });
 
     // 닫기 버튼 클릭 시 모달 닫기
-    if (closeModal) {
-        closeModal.addEventListener('click', () => {
-            galleryModal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // 스크롤 원복
-        });
-    }
+    closeModal.addEventListener('click', () => {
+        galleryModal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // 배경 스크롤 복구
+    });
 
-    // 배경 클릭 시 닫기
+    // 모달 바깥 어두운 영역 클릭 시 닫기
     window.addEventListener('click', (e) => {
         if (e.target === galleryModal) {
             galleryModal.style.display = 'none';
@@ -234,5 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===========================
 console.log('%c도로로 - 도로 균열 보수 동아리', 'font-size: 20px; font-weight: bold; background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
 console.log('%c안전한 도로를 만드는 우리의 여정에 함께하세요!', 'font-size: 14px; color: #7B8AB8;');
+
 
 
